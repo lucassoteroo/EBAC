@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <title>Cervejaria Gourmet</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-2">
+                    <h1><a href="#home">Beer Shop</a></h1>
+                </div>
+                <div class="col-lg-6 col-md-6 col-10">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contatos">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5 col-12">
+                    <h2>Sobre nós</h2>
+                    <p>Criada com a intenção de ser referencia quando o quesito é cerveja boa/gourmet, um local descontraído e que com uma pegada mais tradicional.</p>
+                    <p>Um espaço para você que aprecia uma boa cerveja, e também para você que quer passar um tempo com amigos e familiares, sempre com aquela boa cerveja acompanhando. Além das cevejas, temos sanduíches e tira gostos.</p>
+                </div>
+                <div class="col-lg-6 col-md-7 col-12">
+                    <img src="./img/beer's.jpg" alt="Imagem Exemplo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="produtos">
+        <div class="container">
+            <div class="row">
+                <h2>Produtos</h2>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="./img/corona.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Corona</h5>
+                            <p class="card-text">"Aquela que não te deixa tomar só uma"</p>
+                            <p>R$ 12,00</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="./img/bud.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Budweiser</h5>
+                            <p class="card-text">"Aquela que só serve se for de balde"</p>
+                            <p>R$ 15,00</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="./img/preta.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Preta</h5>
+                            <p class="card-text">"A queridinha da casa apenas inesquecível."</p>
+                            <p>R$ 18,00</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-6 col-12">
+                    <h2 id="contatos">Contato</h2>
+                    <p>Gostou? Preencha os campos do formulário para receber novidades da nossa casa.</p>
+                </div>
+                <div class="col-lg-12 col-md-6 col-12">
+                    <form class="form">
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                        </div>
+                        <div class="input-group">
+                            <input class="form-control" type="email" name="email" placeholder="digite seu email">
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Corona</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Fique por dentro da quantidade e preço</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Quantidade</th>
+                                <th>Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1 cerveja</td>
+                                <td>R$ 12,00</td>
+                            </tr>
+                            <tr>
+                                <td>3 cervejas</td>
+                                <td>R$ 30,00</td>
+                            </tr>
+                            <tr>
+                                <td>6 cervejas</td>
+                                <td>R$ 52,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Budweiser</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Fique por dentro da quantidade e preço</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Quantidade</th>
+                                <th>Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1 cerveja</td>
+                                <td>R$ 15,00</td>
+                            </tr>
+                            <tr>
+                                <td>3 cervejas</td>
+                                <td>R$ 40,00</td>
+                            </tr>
+                            <tr>
+                                <td>6 cervejas</td>
+                                <td>R$ 82,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cerveja Preta</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Fique por dentro da quantidade e preço</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Quantidade</th>
+                                <th>Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1 cerveja</td>
+                                <td>R$ 18,00</td>
+                            </tr>
+                            <tr>
+                                <td>3 cervejas</td>
+                                <td>R$ 50,00</td>
+                            </tr>
+                            <tr>
+                                <td>6 cervejas</td>
+                                <td>R$ 100,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
