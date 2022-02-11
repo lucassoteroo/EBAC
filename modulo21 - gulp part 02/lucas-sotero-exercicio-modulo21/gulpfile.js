@@ -34,7 +34,6 @@ function tarefasJS(callback) {
             './node_modules/bootstrap/dist/js/bootstrap.js',
             './vendor/owl/js/owl.js',
             './vendor/jquery-mask/jquery.mask.js',
-            // './vendor/jquery-ui/jquery-ui.js',
             './src/js/custom.js'
         ])
         .pipe(babel({
@@ -68,7 +67,7 @@ function tarefasImagem() {
 
 function tarefasHTML(callback) {
 
-    gulp.src('./src/**/*.html')
+    gulp.src('./src/*.html')
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('./dist'))
 
