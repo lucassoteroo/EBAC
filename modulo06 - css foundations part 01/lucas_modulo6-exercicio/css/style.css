@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Style the header */
+
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+
+nav {
+    float: left;
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
+}
+
+
+/* Style the list inside the menu */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+}
+
+
+/* Clear floats after the columns */
+
+section::after {
+    background: #ccc;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Style the footer */
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+@media (max-width: 600px) {
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+label {
+    font-size: 1.8rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+}
+
+.nome {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.email {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.mensagem {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.preferencia {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.preferencia input {
+    width: 10%;
+    margin-top: 10px;
+}
+
+.ling-pref {
+    font-size: 1.2rem;
+}
+
+.saber {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.saber input {
+    width: 10%;
+    margin-top: 10px;
+}
+
+.ling-saber {
+    font-size: 1.2rem;
+}
+
+.cor {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.cor select {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+[type="submit"] {
+    width: 100%;
+    border-radius: 10px;
+}
