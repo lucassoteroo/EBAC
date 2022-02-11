@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+    .destack {
+        .img-container {
+            text-align: center;
+            img {
+                width: 80%;
+            }
+        }
+    }
+    .blocks {
+        padding: 1.5rem 0 0 0;
+        ul {
+            height: 210px;
+            li {
+                .img-container {
+                    height: 125px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 2.5rem 0;
+        .container {
+            text-align: center;
+            h4 {
+                font-size: 2rem;
+            }
+        }
+    }
+    .destack {
+        .cabecalho-container {
+            margin-left: 35px;
+        }
+        .info-container {
+            margin-left: 35px;
+        }
+    }
+    .cars {
+        h2 {
+            margin-left: 15px;
+        }
+    }
+    .blocks {
+        ul {
+            flex-direction: column;
+            height: auto;
+            padding: 1rem 0 0 0;
+            li {
+                width: 80%;
+            }
+        }
+    }
+    footer {
+        padding: 2.5rem 0;
+    }
+}

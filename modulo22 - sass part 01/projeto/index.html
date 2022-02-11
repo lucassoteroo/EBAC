@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.css">
+    <title>Loja - Mitsubishi</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h4>Mitsubishi</h4>
+        </div>
+    </header>
+    <section>
+        <div class="destack">
+            <div class="container">
+                <div class="cabecalho-container">
+                    <h1>Lancer 2021</h1>
+                    <h2>Destaque</h2>
+                </div>
+                <div class="img-container">
+                    <img src="./src/images/car.jpeg" alt="Foto lancer vermelho">
+                </div>
+                <div class="info-container">
+                    <p>Carro novo, 4 portas, completo com ar-condicionado, vidro e travas elelétricas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="blocks cars">
+                <h2>Ver detalhe</h2>
+                <ul>
+                    <li>
+                        <div class="img-container">
+                            <img src="./src/images/interior.png" alt="Foto interior">
+                        </div>
+                        <a href="#img01" data-bs-toggle="modal" data-bs-target="#img01">Ver mais</a>
+                    </li>
+                    <li>
+                        <div class=" img-container ">
+                            <img src="./src/images/rodas.jpeg " alt="Foto roda ">
+                        </div>
+                        <a href="#02" data-bs-toggle="modal" data-bs-target="#img02">Ver mais</a>
+                    </li>
+                    <li>
+                        <div class="img-container ">
+                            <img src="./src/images/car2.jpeg " alt="Foto carro ">
+                        </div>
+                        <a href="#03" data-bs-toggle="modal" data-bs-target="#img03"> Ver mais</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="img01">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Interior</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Interior esportivo e minimalista</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="img02">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Pneus</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Aro de liga-leve e pneu de corrida</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="img03">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Traseira</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Traseira com ou sem aerofolio, e com ou sem escapamento esportivo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container ">
+            <p> &copy; Desenvolvido por Lucas Sotero.</p>
+        </div>
+    </footer>
+    <script src="./vendor/bootstrap/js/bootstrap.js "></script>
+    <script src="./vendor/jquery/jquery-3.6.0.min.js "></script>
+    <script src="./src/js/custom.js"></script>
+</body>
+
+</html>
