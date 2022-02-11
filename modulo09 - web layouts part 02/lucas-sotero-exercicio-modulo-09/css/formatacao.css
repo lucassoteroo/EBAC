@@ -1,0 +1,173 @@
+header {
+    width: 80%;
+    margin: 0 auto;
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: darkgray;
+}
+
+div {
+    margin: 4% auto;
+    width: 100%;
+    height: auto;
+}
+
+div nav {
+    background-color: darkslategray;
+    width: 50%;
+    margin: 0 auto;
+}
+
+nav h3 {
+    text-align: center;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gainsboro;
+    margin-bottom: 4%;
+}
+
+nav li {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2% 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    padding-top: 3%;
+}
+
+h3 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    padding-top: 3%;
+}
+
+h4 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    padding-top: 3%;
+}
+
+h5 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    padding-top: 3%;
+}
+
+h6 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    padding-top: 3%;
+}
+
+div {
+    background-color: darkslategray;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+p {
+    font-size: 2.5rem;
+    padding: 2.5%;
+    color: darkgray;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    padding: 2.5%;
+    color: darkgray;
+}
+
+@media screen and (min-width: 375px) {
+    header {
+        width: 100vw;
+        height: 100px;
+    }
+    header h1 {
+        font-size: 7rem;
+    }
+    div {
+        width: 100vw;
+    }
+    div nav {
+        width: 80%;
+    }
+    h1 {
+        font-size: 6rem;
+    }
+    h2 {
+        font-size: 5rem;
+    }
+    h3 {
+        font-size: 4rem;
+    }
+    h4 {
+        font-size: 3rem;
+    }
+    h5 {
+        font-size: 2rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+    div {
+        width: 100vw;
+    }
+    p {
+        font-size: 3.5rem;
+        text-align: justify;
+        padding: 2%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 7rem;
+    }
+    h2 {
+        font-size: 6rem;
+    }
+    h3 {
+        font-size: 5rem;
+    }
+    h4 {
+        font-size: 4rem;
+    }
+    h5 {
+        font-size: 3rem;
+    }
+    h6 {
+        font-size: 2rem;
+    }
+}

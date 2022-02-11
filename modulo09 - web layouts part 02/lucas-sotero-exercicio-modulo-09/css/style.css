@@ -1,0 +1,185 @@
+header {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    font-size: 5rem;
+    color: darkgray;
+}
+
+header h3 {
+    font-size: 5rem;
+    color: darkgray;
+    padding-top: 2.5%;
+}
+
+header p {
+    font-size: 2.5rem;
+    padding: 2.5%;
+    color: darkgray;
+}
+
+header div h2 {
+    padding: 5%;
+    font-size: 3rem;
+    color: gainsboro;
+    background-color: darkslategray;
+}
+
+.navegacao {
+    margin: 4% auto;
+    width: 100%;
+    height: auto;
+}
+
+.navegacao nav {
+    background-color: darkslategray;
+    width: 50%;
+    margin: 0 auto;
+}
+
+nav h3 {
+    text-align: center;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gainsboro;
+    margin-bottom: 4%;
+}
+
+nav li {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2% 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+#escola {
+    background-color: gainsboro;
+    margin: 4% 0;
+    width: 100%;
+    height: auto;
+}
+
+#escola h3 {
+    text-align: center;
+    font-size: 5rem;
+    color: darkslategray;
+    padding-top: 2.5%;
+}
+
+#escola p {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    padding: 2% 2%;
+    font-size: 3rem;
+}
+
+footer {
+    background-color: gainsboro;
+    width: 100%;
+    height: 50px;
+}
+
+footer p {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+@media screen and (min-width: 375px) {
+    header {
+        width: 100vw;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header h3 {
+        font-size: 2.5rem;
+        padding-top: 2.5%;
+    }
+    header p {
+        font-size: 1.5rem;
+        padding: 1.5%;
+    }
+    header div h2 {
+        padding: 2%;
+        font-size: 1.8rem;
+    }
+    .navegacao {
+        width: 90vw;
+    }
+    .navegacao nav {
+        width: 100%;
+    }
+    nav h3 {
+        font-size: 2.2rem;
+    }
+    nav li {
+        font-size: 1.8rem;
+    }
+    #escola {
+        width: 100vw;
+    }
+    #escola h3 {
+        font-size: 2.5rem;
+    }
+    #escola p {
+        font-size: 1.5rem;
+    }
+    footer {
+        width: 100vw;
+        height: 30px;
+    }
+    footer p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        width: 90vw;
+    }
+    header h1 {
+        font-size: 3.2rem;
+    }
+    header h3 {
+        font-size: 3.2rem;
+    }
+    header p {
+        font-size: 2.2rem;
+    }
+    header div h2 {
+        font-size: 2.2rem;
+    }
+    .navegacao {
+        width: 70vw;
+    }
+    nav h3 {
+        font-size: 3rem;
+    }
+    nav li {
+        font-size: 2.3rem;
+    }
+    #escola h3 {
+        font-size: 3.2rem;
+    }
+    #escola p {
+        font-size: 2rem;
+    }
+    footer {
+        height: 40px;
+    }
+    footer p {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,210 @@
+header {
+    width: 80%;
+    margin: 0 auto;
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: darkgray;
+}
+
+div {
+    margin: 4% auto;
+    width: 100%;
+    height: auto;
+}
+
+div nav {
+    background-color: darkslategray;
+    width: 50%;
+    margin: 0 auto;
+}
+
+nav h3 {
+    text-align: center;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gainsboro;
+    margin-bottom: 4%;
+}
+
+nav li {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2% 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+article {
+    text-align: center;
+    background-color: gainsboro;
+    margin: 4% 0;
+    width: 100%;
+    height: auto;
+}
+
+article h1 {
+    font-size: 4rem;
+    color: darkslategray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2.5% 0;
+}
+
+article p {
+    font-size: 2rem;
+    color: darkslategray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 2.5% 0;
+}
+
+article div {
+    display: flex;
+    flex-direction: column;
+}
+
+article label {
+    font-size: 2rem;
+    width: 100%;
+    color: darkslategray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+article input {
+    text-align: center;
+    margin: 2% auto;
+    font-size: 2rem;
+    width: 50%;
+    color: darkslategray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+article textarea {
+    text-align: center;
+    margin: 2% auto;
+    font-size: 2rem;
+    width: 50%;
+    color: darkslategray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+[type="radio"],
+[type="checkbox"] {
+    width: 5%;
+}
+
+select {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2% auto;
+    width: 20%;
+}
+
+footer {
+    background-color: gainsboro;
+    width: 100%;
+    height: 50px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+@media (min-width: 375px) {
+    header {
+        width: 100vw;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    div nav {
+        width: 80%;
+    }
+    nav li {
+        font-size: 2rem;
+    }
+    article h1 {
+        font-size: 3rem;
+    }
+    article p {
+        font-size: 2rem;
+    }
+    article input {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+    article textarea {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+    [type="radio"],
+    [type="checkbox"] {
+        width: 100%;
+    }
+    select {
+        width: 30%;
+    }
+    footer {
+        width: 100%;
+        height: 30px;
+    }
+    footer p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 765px) {
+    header {
+        width: 90vw;
+    }
+    header h1 {
+        font-size: 4rem;
+    }
+    div nav {
+        width: 60%;
+    }
+    nav li {
+        font-size: 3rem;
+    }
+    article h1 {
+        font-size: 4rem;
+    }
+    article p {
+        font-size: 2.5rem;
+    }
+    article input {
+        font-size: 2rem;
+        width: 80%;
+        padding: 2%;
+    }
+    article textarea {
+        font-size: 2rem;
+        width: 80%;
+        padding: 2%;
+    }
+    [type="radio"],
+    [type="checkbox"] {
+        width: 3%;
+    }
+    select {
+        width: 20%;
+        font-size: 2rem;
+    }
+    footer {
+        width: 100%;
+        height: 30px;
+    }
+    footer p {
+        font-size: 1.5rem;
+    }
+}
