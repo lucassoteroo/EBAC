@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+
+    <head>
+        <h2>Fale Conosco</h2>
+    </head>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Contato</h1>
+            <p>Preencha os campos abaixo</p>
+            <form method="post">
+                <div>
+                    <label for="nome">Nome</label><br>
+                    <input type="text" name="nome" id="nome" placeholder="Informe seu nome...">
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Informe seu email...">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem</label><br>
+                    <textarea name="mensagem" id="" cols="30" rows="5" placeholder="Deixe sua mensagem"></textarea>
+                </div>
+                <div>
+                    <label for="linguagens">Qual linguagem você prefere:</label>
+                    <input type="radio" name="linguagens" id="linguagens" value="html"> Html
+                    <input type="radio" name="linguagens" id="linguagens" value="css"> Css
+                    <input type="radio" name="linguagens" id="linguagens" value="javascript"> Javascript
+                </div>
+                <div>
+                    <label for="linguagens">Quais linguagens você sabe:</label>
+                    <input type="checkbox" name="linguagens" id="linguagens" value="html"> Html
+                    <input type="checkbox" name="linguagens" id="linguagens" value="css"> Css
+                    <input type="checkbox" name="linguagens" id="linguagens" value="javascript"> Javascript
+                </div>
+                <div>
+                    <label for="experiencia">Há quantos anos você desenvolve</label>
+                    <select name="experiencia" id="experiencia">
+                        <option value="1" selected>1 ano</option>
+                        <option value="2">2 anos</option>
+                        <option value="3">3 anos</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" name="botao" value="Enviar">
+                </div>
+            </form>
+        </article>
+    </section>
+    <footer>
+        <p>Desenvolvido por lucas</p>
+    </footer>
+</body>
+
+</html>
