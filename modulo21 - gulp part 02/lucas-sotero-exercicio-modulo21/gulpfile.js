@@ -88,7 +88,7 @@ gulp.task("serve", function() {
 
 })
 
-const process = series(tarefasHTML, tarefasJS, tarefasCSS, tarefasImagem)
+const process = series(tarefasHTML, tarefasJS, tarefasCSS)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS

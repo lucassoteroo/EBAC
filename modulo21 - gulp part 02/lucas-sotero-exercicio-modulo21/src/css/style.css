@@ -869,6 +869,9 @@ a:not([href]):not([class]):hover {
 }
 
 @media (max-width: 767px) {
+    .navbar-brand img {
+        width: 50%;
+    }
     .subscribe-form .main-content form input.button {
         margin-top: 20px;
     }
