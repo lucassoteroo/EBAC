@@ -879,4 +879,10 @@ a:not([href]):not([class]):hover {
         margin-top: 15px;
         text-align: left;
     }
+    .btn {
+        padding: .375rem 0;
+    }
+    .featured-item {
+        height: 305px;
+    }
 }

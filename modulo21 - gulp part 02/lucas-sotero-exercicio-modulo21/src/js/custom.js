@@ -6,11 +6,6 @@ $(document).ready(function() {
 
     $('.featured-item:first h4').append('<span class="badge bg-secondary">Novo</span>')
 
-    $('.modal-footer a').on('click', function(event) {
-        event.preventDefault();
-        alert('Produto adicionado ao carrinho');
-    });
-
     $('#form-submit').on('click', function(event) {
         event.preventDefault();
         if ($('#email').val() != '') {
