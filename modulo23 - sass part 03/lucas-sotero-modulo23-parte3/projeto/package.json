@@ -1,0 +1,25 @@
+{
+  "name": "lucas-sotero-exercicio-modulo22",
+  "version": "1.0.0",
+  "description": "São ferramentas utilizadas para aumentar a produtividade no desenvolvimento CSS, mantendo a compatibilidade entre as versões do CSS nos navegadores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucassoteroo/lucas-sotero-exercicio-modulo22.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucassoteroo/lucas-sotero-exercicio-modulo22/issues"
+  },
+  "homepage": "https://github.com/lucassoteroo/lucas-sotero-exercicio-modulo22#readme",
+  "devDependencies": {
+    "bootstrap": "^5.1.3",
+    "gulp": "^4.0.2",
+    "jquery": "^3.6.0"
+  }
+}

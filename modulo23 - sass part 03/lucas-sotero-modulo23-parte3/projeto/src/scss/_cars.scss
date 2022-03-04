@@ -1,0 +1,14 @@
+.cars {
+    &__title {
+        color: $color-02;
+    }
+    &__item {
+        color: $color-01;
+        &__destack {
+            border: 1px solid $color-03;
+        }
+    }
+    &__button {
+        background-color: $color-default;
+    }
+}
