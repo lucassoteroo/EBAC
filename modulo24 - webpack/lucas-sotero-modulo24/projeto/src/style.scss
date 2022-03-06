@@ -1,0 +1,18 @@
+$color-font: #55f;
+$font-default: Arial,
+Helvetica,
+sass-serif;
+.container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.title {
+    color: $color-font;
+    font-family: $font-default
+}
