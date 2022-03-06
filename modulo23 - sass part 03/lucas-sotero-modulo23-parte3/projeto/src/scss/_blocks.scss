@@ -19,7 +19,7 @@
         margin: $space-default auto;
         width: calc(99% / 3 - 15px);
         @media (max-width: $tablet) {
-            width: calc(99% - 30px);
+            width: calc(33.33% - 5px);
         }
     }
     &__img-container {
