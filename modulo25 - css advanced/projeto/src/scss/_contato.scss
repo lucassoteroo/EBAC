@@ -1,0 +1,16 @@
+.contato {
+    padding-bottom: 4rem;
+    text-align: center;
+    &__input {
+        width: 20%;
+        margin-right: 2rem;
+        padding: 1rem;
+        font-size: $font-size-default;
+    }
+    &__button {
+        padding: 1rem;
+        font-size: $font-size-default;
+        color: #fff;
+        background-color: $color-font;
+    }
+}

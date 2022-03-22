@@ -5,38 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>x</title>
+    <title>Lance ME</title>
 </head>
 
 <body>
     <div id="root">
         <header>
             <div class="container">
-                <h2>Logo</h2>
-                <nav>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#produtos">Produtos</a>
-                    <a href="#contato">Contatos</a>
+                <h2 class="logo">Logo</h2>
+                <nav class="nav">
+                    <a href="#sobre" class="nav__item">Sobre</a>
+                    <a href="#produtos" class="nav__item">Produtos</a>
+                    <a href="#contato" class="nav__item">Contatos</a>
                 </nav>
             </div>
         </header>
         <section id="sobre">
             <div class="container">
                 <aside>
-                    <div id="localizacao">
-
-                    </div>
-                    <article>
-                        <h1>Sobre nós</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem, illum ratione temporibus porro ad totam officia rem ut ipsa repellat soluta ducimus, tenetur quasi animi aut, quae similique. Corrupti.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam, dignissimos possimus sapiente beatae maiores officia reiciendis? Ducimus saepe at tenetur eos fuga quasi mollitia. Quas mollitia inventore facere blanditiis.</p>
+                    <article class="sobre">
+                        <h1 class="sobre__titulo">Sobre nós</h1>
+                        <p class="sobre__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem, illum ratione temporibus porro ad totam officia rem ut ipsa repellat soluta ducimus, tenetur quasi animi aut, quae similique. Corrupti.</p>
+                        <p class="sobre__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam, dignissimos possimus sapiente beatae maiores officia reiciendis? Ducimus saepe at tenetur eos fuga quasi mollitia. Quas mollitia inventore facere blanditiis.</p>
                     </article>
+                    <div id="localizacao">
+                    </div>
                 </aside>
             </div>
         </section>
         <section id="produtos">
             <div class="container">
-                <h1>Catálogo</h1>
+                <h1 name="produtos">Catálogo</h1>
                 <div class="vitrine">
                     <div class="vitrine__item">
                         <h4 class="vitrine__produto">Produto 1</h4>
@@ -62,25 +61,13 @@
                         <p class="vitrine__desc"></p>
                         <a href="" class="vitrine__button">Ver detalhes</a>
                     </div>
-                    <div class="vitrine__item">
-                        <h4 class="vitrine__produto">Porduto 5</h4>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-                    <div class="vitrine__item">
-                        <h4 class="vitrine__produto">Produto 6</h4>
-                        <div class="vitrine__image"></div>
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
                 </div>
             </div>
         </section>
         <section id="contato">
             <div class="container">
                 <form class="contato">
-                    <h3>Contato</h3>
+                    <h1 name="contato" class="contato__titulo">Contato</h1>
                     <input type="text" placeholder="Nome" class="contato__input">
                     <input type="text" placeholder="Email" class="contato__input">
                     <button class="contato__button">Enviar</button>

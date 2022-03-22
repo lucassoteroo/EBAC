@@ -1,6 +1,10 @@
 $color-font: #33d;
 $color-bg-default: #a9f;
 $color-bg-boxes: #FD3;
+$color-primary: #195484;
+$color-secondary: #f58220;
+$font-color-primary: #fff;
+$font-color-secondary: #454545;
 $font-size-default: 1.6rem;
 $font-default: Arial,
 Helvetica,
@@ -10,26 +14,33 @@ html {
 }
 
 body {
-    background-color: $color-bg-default;
+    background-color: $color-primary;
     font-family: $font-default;
 }
 
 h1 {
-    color: $color-font;
+    color: $color-secondary;
     text-align: center;
     margin-top: 4rem;
+    font-size: 2.5rem;
 }
 
-h2 {
-    margin-top: 4rem;
-}
-
-header,
 section,
 footer {
     display: block;
     float: left;
     width: 100%;
+}
+
+header {
+    .container {
+        text-align: center;
+        .logo {
+            font-size: 3.5rem;
+            padding: 2rem 0 3rem 0;
+            color: #fff;
+        }
+    }
 }
 
 .container {
@@ -40,7 +51,17 @@ footer {
 }
 
 #sobre {
-    background-color: white;
+    background-color: $font-color-secondary;
+    border-radius: 1rem
+}
+
+footer {
+    p {
+        font-size: 1.25rem
+    }
 }
 
 @import 'vitrine';
+@import 'nav';
+@import 'sobre';
+@import 'contato';
