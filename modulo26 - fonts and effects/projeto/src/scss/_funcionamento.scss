@@ -1,0 +1,40 @@
+#funcionamento {
+    .container {
+        @include container;
+        background-color: $color-04;
+    }
+}
+
+.funcionamento {
+    padding: 1rem 0 3rem 0;
+    &__titulo {
+        text-align: center;
+        @include titulo;
+        color: $color-03;
+        border-bottom: 2px solid $color-03;
+    }
+    .passos {
+        padding: 0 3rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+        &__item {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            border-left: 2px solid $color-03;
+            border-right: 2px solid $color-03;
+            border-bottom: 2px solid $color-03
+        }
+        &__titulo {
+            background-color: $color-03;
+            @include texto;
+            color: $color-font;
+            padding: 1rem 0;
+        }
+        &__img {
+            width: 220px;
+            height: 140px;
+        }
+    }
+}

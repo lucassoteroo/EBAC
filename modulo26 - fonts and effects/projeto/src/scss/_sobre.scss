@@ -1,0 +1,22 @@
+#sobre {
+    .container {
+        background-color: $color-01;
+        @include container;
+    }
+}
+
+.sobre {
+    padding: 1rem 0 3rem 0;
+    text-align: center;
+    &__titulo {
+        @include titulo;
+        color: $color-04;
+        border-bottom: 2px solid $color-04;
+    }
+    &__texto {
+        margin: 0 auto 2rem auto;
+        width: 80%;
+        @include texto;
+        color: $color-font;
+    }
+}

@@ -1,0 +1,33 @@
+#contato {
+    .container {
+        background-color: $color-03;
+        margin: 0 auto;
+        width: 65%;
+        margin-bottom: 3rem;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 5px 1px $color-shadow;
+    }
+}
+
+.contato {
+    padding: 1rem 0 4rem 0;
+    text-align: center;
+    &__titulo {
+        @include titulo;
+        border-bottom: 2px solid #000;
+    }
+    &__input {
+        width: 30%;
+        margin-right: 2rem;
+        padding: 1rem;
+        @include texto;
+        cursor: pointer;
+    }
+    &__button {
+        padding: 1rem;
+        @include texto;
+        background-color: $color-font;
+        color: #000;
+        cursor: pointer;
+    }
+}

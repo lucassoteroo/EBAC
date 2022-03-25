@@ -1,0 +1,42 @@
+@import 'vars';
+@import 'fonts';
+@import 'mixins';
+@import 'produtos';
+@import 'nav';
+@import 'sobre';
+@import 'funcionamento';
+@import 'contato';
+html {
+    font-size: 62.5%;
+}
+
+section,
+footer {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+footer {
+    .container {
+        p {
+            font-family: $font-bold;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+header {
+    background-color: $color-font;
+    .container {
+        text-align: center;
+        padding-bottom: 11rem;
+        .logo {
+            width: 350px;
+            align-self: center;
+        }
+        .texto-chamativo {
+            @include texto-chamativo;
+        }
+    }
+}
