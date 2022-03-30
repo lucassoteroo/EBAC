@@ -13,8 +13,13 @@
     padding: 1rem 0 4rem 0;
     text-align: center;
     &__titulo {
-        @include titulo;
+        @include titulo(20%);
         border-bottom: 2px solid #000;
+    }
+    &__texto {
+        font-family: $font-bold;
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
     }
     &__input {
         width: 30%;

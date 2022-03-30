@@ -9,7 +9,7 @@
     padding: 1rem 0 3rem 0;
     &__titulo {
         text-align: center;
-        @include titulo;
+        @include titulo(20%);
         color: $color-03;
         border-bottom: 2px solid $color-03;
     }

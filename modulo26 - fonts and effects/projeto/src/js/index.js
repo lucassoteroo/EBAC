@@ -9,7 +9,11 @@ import '../assets/img/vontade.jpg'
 
 document.addEventListener('click', (event) => {
     const et = event.target;
-    if (et.classList.contains('contato__button')) {
-        alert('contato enviado com sucesso!')
+    let textoNome = document.getElementById('texto1').value;
+    let textoGmail = document.getElementById('texto2').value;
+    if (et.classList.contains('contato__button') && textoNome == '' && textoGmail == '') {
+        alert("Preencha os campos de 'Nome' e 'Email'")
+    } else if (et.classList.contains('contato__button')) {
+        alert(textoNome + " enviaremos nossa newsletter para o email: " + textoGmail)
     }
 })

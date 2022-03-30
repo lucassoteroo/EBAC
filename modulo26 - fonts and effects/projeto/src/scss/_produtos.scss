@@ -11,7 +11,7 @@
         text-align: center;
         color: $color-font;
         border-bottom: 2px solid $color-font;
-        @include titulo;
+        @include titulo(20%);
     }
     .produtos {
         padding: 0 3rem 2rem 3rem;

@@ -1,8 +1,8 @@
-@mixin titulo {
+@mixin titulo($width) {
     font-family: $font-bold;
     font-size: 2.8rem;
     padding-bottom: .5rem;
-    width: 20%;
+    width: $width;
     margin: 3rem auto 4rem auto;
 }
 
