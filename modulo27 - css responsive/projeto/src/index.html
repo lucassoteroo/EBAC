@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lance ME</title>
+</head>
+
+<body>
+    <div id="root">
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <a href="#sobre" class="nav__item">Sobre</a>
+                    <a href="#funcionamento" class="nav__item">Passos</a>
+                    <a href="#produtos" class="nav__item">Produtos</a>
+                    <a href="#contato" class="nav__item">Contatos</a>
+                </nav>
+                <img src="./assets/img/logo.png" alt="logo empresa" class="logo">
+                <h1 class="texto-chamativo">Quer entrar no mundo dos investimento mas não faz ideia de por onde começar? <br> Venha conosco e aprenda !!!</h1>
+            </div>
+        </header>
+        <section id="sobre">
+            <div class="container">
+                <aside>
+                    <article class="sobre">
+                        <h1 class="sobre__titulo">Sobre nós</h1>
+                        <p class="sobre__texto">Nossa fundação foi no ano de 2021, após notarmos a crescente vontade de pessoas comuns investirem seu dinheiro de forma inteligente, mas sem ter nenhum conhecimento prévio do assunto.</p>
+                        <p class="sobre__texto">Nosso foco não é no investidor de elite, mas sim naquele possível futuro investidor, que tem pouco capital para investir, mas mesmo assim quer alcançar sua liberdade financeira. Os ajudamos a não perder seu dinheiro!</p>
+                    </article>
+                    <div id="localizacao">
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <section id="funcionamento">
+            <div class="container">
+                <div class="funcionamento">
+                    <h1 class="funcionamento__titulo">Como funciona</h1>
+                    <div class="passos">
+                        <div class="passos__item">
+                            <h2 class="passos__titulo">Vontade de investir!</h2>
+                            <img src="./assets/img/vontade.jpg" alt="" class="passos__img">
+                        </div>
+                        <div class="passos__item">
+                            <h2 class="passos__titulo">Por onde começar?</h2>
+                            <img src="./assets/img/comecar.jpg" alt="" class="passos__img">
+                        </div>
+                        <div class="passos__item">
+                            <h2 class="passos__titulo">Estudar</h2>
+                            <img src="./assets/img/estudar.jpg" alt="" class="passos__img">
+                        </div>
+                        <div class="passos__item">
+                            <h2 class="passos__titulo">Se planejar</h2>
+                            <img src="./assets/img/planejar.jpg" alt="" class="passos__img">
+                        </div>
+                        <div class="passos__item">
+                            <h2 class="passos__titulo">Investir</h2>
+                            <img src="./assets/img/investir.jpg" alt="" class="passos__img">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos">
+            <div class="container">
+                <div class="vitrine">
+                    <h1 class="vitrine__titulo">Produtos</h1>
+                    <div class="produtos">
+                        <div class="produtos__item">
+                            <h4 class="produtos__produto">Como investir do Zero</h4>
+                            <div class="produtos__image">
+                                <iframe src="https://www.youtube.com/embed/V12GX6hZYDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="produtos__desc"></p>
+                            <a href="https://youtu.be/V12GX6hZYDU" class="produtos__button">Ir para vídeo</a>
+                        </div>
+                        <div class="produtos__item">
+                            <h4 class="produtos__produto">Onde investir R$1000?</h4>
+                            <div class="produtos__image">
+                                <iframe src="https://www.youtube.com/embed/UxFjRuiP9DA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="produtos__desc"></p>
+                            <a href="https://www.youtube.com/watch?v=UxFjRuiP9DA" class="produtos__button">Ir para vídeo</a>
+                        </div>
+                        <div class="produtos__item">
+                            <h4 class="produtos__produto">Saia da poupança!</h4>
+                            <div class="produtos__image">
+                                <iframe src="https://www.youtube.com/embed/6vzeLK92diQ?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="produtos__desc"></p>
+                            <a href="https://www.youtube.com/watch?v=6vzeLK92diQ" class="produtos__button">Ir para vídeo</a>
+                        </div>
+                        <div class="produtos__item">
+                            <h4 class="produtos__produto">Tesouro IPCA+ </h4>
+                            <div class="produtos__image">
+                                <iframe src="https://www.youtube.com/embed/EtvVxRBPmi8?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <p class="produtos__desc"></p>
+                            <a href="https://www.youtube.com/watch?v=EtvVxRBPmi8" class="produtos__button">Ir para vídeo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <form class="contato">
+                    <h1 name="contato" class="contato__titulo">Contato</h1>
+                    <p class="contato__texto">Assine nossas newsletter e receba as novidades!</p>
+                    <input type="text" placeholder="Nome" class="contato__input" id="texto1">
+                    <input type="text" placeholder="Email" class="contato__input" id="texto2">
+                    <button type="submit" class="contato__button">Assinar</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p>Loja X &copy; Todos os direitos reservados. <br>
+                    <small>Desenvolvido por Lucas Sotero</small>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

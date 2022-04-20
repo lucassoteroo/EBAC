@@ -1,0 +1,12 @@
+.nav {
+    padding: 5rem 0;
+    &__item {
+        @include nav-item;
+        text-decoration: none;
+        padding: 0 5rem;
+        cursor: pointer;
+        &:hover {
+            text-shadow: 5px 5px 5px;
+        }
+    }
+}
