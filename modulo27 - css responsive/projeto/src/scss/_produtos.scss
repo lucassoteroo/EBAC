@@ -51,6 +51,7 @@
             text-decoration: none;
             align-self: center;
             margin-bottom: 2rem;
+            @include texto;
             &:hover {
                 box-shadow: 2px 2px 2px $color-shadow;
                 cursor: pointer;
