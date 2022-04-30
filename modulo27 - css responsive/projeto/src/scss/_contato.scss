@@ -1,6 +1,6 @@
 #contato {
     .container {
-        background-color: $color-03;
+        background-color: #bcbcbc;
         margin: 0 auto;
         width: 65%;
         margin-bottom: 3rem;
@@ -21,12 +21,16 @@
         font-size: 2rem;
         padding-bottom: 1.5rem;
     }
-    &__input {
+    &__nome,
+    &__email {
         width: 30%;
         margin-right: 2rem;
         padding: 1rem;
         @include texto;
         cursor: pointer;
+    }
+    .erro {
+        border-color: #f00;
     }
     &__button {
         padding: 1rem;
