@@ -1,7 +1,7 @@
 // importando os modulos das classes
-import { Animal } from "./modules/Animal.js";
-import { Cachorro } from "./modules/Cachorro.js";
-import { Gato } from "./modules/Gato.js";
+import { Animal } from "./Animal.js";
+import { Cachorro } from "./Cachorro.js";
+import { Gato } from "./Gato.js";
 
 // instanciando o objeto da classe mãe
 const elefante = new Animal("elefante")
