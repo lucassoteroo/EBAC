@@ -1,0 +1,29 @@
+.total,
+.filter {
+    max-width: 1200px;
+    margin: 5rem auto 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #bcbcbc;
+    padding: 2rem;
+    h4 {
+        padding-bottom: 2rem;
+    }
+}
+
+.filter {
+    margin-bottom: 5rem;
+}
+
+.list {
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    li {
+        border: 1px solid #000;
+        padding: 1rem;
+    }
+}

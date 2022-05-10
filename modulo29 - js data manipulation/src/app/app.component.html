@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celulares</title>
+</head>
+
+<body>
+    <section class="total">
+        <h4>Lista de Celulares</h4>
+        <ul *ngFor="let item of getPhones" class="list">
+            <li>{{item.nome}}</li>
+            <li>Preço: {{item.preco}} R$</li>
+            <li>Mmeória Ram: {{item.memoriaRam}} Gb</li>
+            <li>Memória Interna: {{item.memoriaInterna}} Gb</li>
+            <li>Ano: {{item.ano}}</li>
+        </ul>
+    </section>
+    <section class="filter">
+        <h4>Lista de Celulares - Valor maior que 4000 R$</h4>
+        <ul *ngFor="let item of filterPhonesByPrice" class="list">
+            <li>{{item.nome}}</li>
+            <li>Preço: {{item.preco}} R$</li>
+            <li>Mmeória Ram: {{item.memoriaRam}} Gb</li>
+            <li>Memória Interna: {{item.memoriaInterna}} Gb</li>
+            <li>Ano: {{item.ano}}</li>
+        </ul>
+    </section>
+</body>
+
+</html>
