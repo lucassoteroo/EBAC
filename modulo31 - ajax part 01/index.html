@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Exemplo Ajax</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="titulo">Buscar por CEP</h1>
+        <form class="form">
+            <input type="text" placeholder="Informe seu Nome" class="item" id="idNome">
+            <input type="number" placeholder="Informe seu Idade" class="item" id="idIdade">
+            <input type="text" placeholder="Informe seu Cep" class="item" id="cepUsuario">
+            <input type="text" placeholder="Informe sua Rua" class="item" id="idLogradouro"></input>
+            <input type="text" placeholder="Informe seu Bairro" class="item" id="idBairro"></input>
+            <input type="text" placeholder="Informe sua Cidade" class="item" id="idLocalidade"></input>
+            <input type="text" placeholder="Informe seu Estado" class="item" id="idUF"></input>
+            <input type="text" placeholder="Informe seu DDD" class="item" id="idDDD"></input>
+        </form>
+        <button type="button" id="botao" onclick="Enviar()" disabled=true>Enviar</button>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
