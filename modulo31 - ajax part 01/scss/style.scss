@@ -12,25 +12,30 @@ body {
             font-size: 28px;
         }
         .form {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px 20px;
-            padding: 0 150px;
-            .item {
-                width: 200px;
-                margin: 0 auto;
-                padding: 10px;
-                text-align: center;
-                font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            .input-group {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px 20px;
+                padding: 0 150px;
+                .item {
+                    width: 200px;
+                    margin: 0 auto;
+                    padding: 10px;
+                    text-align: center;
+                    font-size: 15px;
+                }
             }
-        }
-        #botao {
-            margin: 25px 0;
-            font-size: 15px;
-            font-weight: 600;
-            padding: 10px 20px;
-            &:hover {
-                cursor: pointer;
+            #botao {
+                margin: 25px auto;
+                font-size: 15px;
+                font-weight: 600;
+                padding: 10px 20px;
+                width: 30%;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -40,13 +45,15 @@ body {
     body {
         .container {
             .form {
-                padding: 0px 45px;
+                .input-group {
+                    padding: 0px 45px;
+                }
             }
         }
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 572px) {
     body {
         .container {
             margin-top: 50px;
@@ -54,9 +61,14 @@ body {
                 font-size: 25px;
             }
             .form {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                padding: 0px 0px;
+                .input-group {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    padding: 0px 0px;
+                }
+                #botao {
+                    width: 45%;
+                }
             }
         }
     }

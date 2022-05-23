@@ -14,44 +14,52 @@ body .container .titulo {
   font-size: 28px;
 }
 body .container .form {
+  display: flex;
+  flex-direction: column;
+}
+body .container .form .input-group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 20px;
   padding: 0 150px;
 }
-body .container .form .item {
+body .container .form .input-group .item {
   width: 200px;
   margin: 0 auto;
   padding: 10px;
   text-align: center;
   font-size: 15px;
 }
-body .container #botao {
-  margin: 25px 0;
+body .container .form #botao {
+  margin: 25px auto;
   font-size: 15px;
   font-weight: 600;
   padding: 10px 20px;
+  width: 30%;
 }
-body .container #botao:hover {
+body .container .form #botao:hover {
   cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
-  body .container .form {
+  body .container .form .input-group {
     padding: 0px 45px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 572px) {
   body .container {
     margin-top: 50px;
   }
   body .container .titulo {
     font-size: 25px;
   }
-  body .container .form {
+  body .container .form .input-group {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 0px 0px;
+  }
+  body .container .form #botao {
+    width: 45%;
   }
 }
 
