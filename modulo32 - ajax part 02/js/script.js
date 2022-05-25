@@ -12,6 +12,8 @@ const ddd = document.getElementById('idDDD')
 const button = document.querySelector('#botao')
 const notNull = document.getElementsByClassName('null')
 
+const campoResultado = document.getElementById('resultado')
+
 cepUsuario.addEventListener('focusout', function(event) {
     getCep(event.target.value);
 })
@@ -95,15 +97,14 @@ form.addEventListener('submit', function(event) {
         msg.push(isUf)
     }
     msg.forEach(item => {
-        markup += `${item} 
-        `
+        markup += `${item} <br>`
     })
 
     if (msg.length == 0) {
         alert('Enviando formulário. Obrigado!')
         form.submit()
     } else {
-        alert(markup)
+        campoResultado.innerHTML = markup
     }
 })
 
