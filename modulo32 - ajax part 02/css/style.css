@@ -31,7 +31,16 @@ body .container .form .fields .input-group .item {
   text-align: center;
   font-size: 15px;
 }
-body .container .form #resultado {
+body .container .form #resultadoNome,
+body .container .form #resultadoEmail,
+body .container .form #resultadoIdade,
+body .container .form #resultadoNumero,
+body .container .form #resultadoCep,
+body .container .form #resultadoRua,
+body .container .form #resultadoBairro,
+body .container .form #resultadoLocalidade,
+body .container .form #resultadoUF,
+body .container .form #resultadoDDD {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: red;
   text-align: center;

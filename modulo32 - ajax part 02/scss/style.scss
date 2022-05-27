@@ -32,7 +32,16 @@ body {
                     }
                 }
             }
-            #resultado {
+            #resultadoNome,
+            #resultadoEmail,
+            #resultadoIdade,
+            #resultadoNumero,
+            #resultadoCep,
+            #resultadoRua,
+            #resultadoBairro,
+            #resultadoLocalidade,
+            #resultadoUF,
+            #resultadoDDD {
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 color: red;
                 text-align: center;
