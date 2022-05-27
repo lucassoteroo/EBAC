@@ -13,34 +13,20 @@ const button = document.querySelector('#botao')
 const notNull = document.getElementsByClassName('null')
 
 const campoResultado = document.getElementById('resultado')
+const campoResultadoNome = document.getElementById('resultadoNome')
+const campoResultadoEmail = document.getElementById('resultadoEmail')
+const campoResultadoBairro = document.getElementById('resultadoBairro')
+const campoResultadoRua = document.getElementById('resultadoRua')
+const campoResultadoLocalidade = document.getElementById('resultadoLocalidade')
+const campoResultadoIdade = document.getElementById('resultadoIdade')
+const campoResultadoUf = document.getElementById('resultadoUF')
+const campoResultadoDdd = document.getElementById('resultadoDDD')
+const campoResultadoNumero = document.getElementById('resultadoNumero')
+const campoResultadoCep = document.getElementById('resultadoCep')
 
 cepUsuario.addEventListener('focusout', function(event) {
     getCep(event.target.value);
 })
-
-function getCep(user) {
-    fetch(`https://viacep.com.br/ws/${user}/json/`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-        .then((res) => res.json())
-        .then((data) => {
-            let cep = data.cep
-            if (cep.match(/[0-9]{5}-[\d]{3}/)) {
-                bairro.value = (data.bairro);
-                localidade.value = (data.localidade);
-                logradouro.value = (data.logradouro);
-                ddd.value = (data.ddd);
-                uf.value = (data.uf)
-                    // button.disabled = false
-            } else {
-                alert('Confira se o campo "CEP" está correto')
-            }
-        })
-        .catch(() => alert('Confira se o campo "CEP" está correto'))
-}
 
 function isEmpty(element) {
     return element.value.length < 1 ? `O campo ${element.name} não pode estar vazio` : '';
@@ -62,6 +48,41 @@ function validaUf(element) {
     return element.value.match(/[A-Z]{2}/) ? '' : `Digite uma ${element.name} válida`
 }
 
+function validaDDD(element) {
+    return element.value.match(/[0-9]{2}/) ? '' : `Digite uma ${element.name} válida`
+}
+
+function validaNumero(element) {
+    return element.value.match(/[0-9]{9}/) ? '' : `Digite uma ${element.name} válida`
+}
+
+function validaCep(element) {
+    return element.value.match(/[0-9]{5}[\d]{3}/) ? '' : `Confira se o campo "${element.name}" está correto`
+}
+
+
+function getCep(user) {
+    fetch(`https://viacep.com.br/ws/${user}/json/`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then((res) => res.json())
+        .then((data) => {
+            let cep = data.cep
+            if (cep.match(/[0-9]{5}-[\d]{3}/)) {
+                bairro.value = (data.bairro);
+                localidade.value = (data.localidade);
+                logradouro.value = (data.logradouro);
+                ddd.value = (data.ddd);
+                uf.value = (data.uf)
+                campoResultadoCep.innerHTML = ''
+            }
+        })
+}
+
+
 form.addEventListener('submit', function(event) {
     event.preventDefault();
     let msg = []
@@ -72,57 +93,79 @@ form.addEventListener('submit', function(event) {
             msg.push(fieldState)
         }
     })
-    const isEmail = validaEmail(email)
-    if (isEmail) {
-        msg.push(isEmail)
-    }
-    const isNome = validaNome(nome)
-    if (isNome) {
-        msg.push(isNome)
-    }
-    const isBairro = validaNome(bairro)
-    if (isBairro) {
-        msg.push(isBairro)
-    }
-    const isLocalidade = validaNome(localidade)
-    if (isLocalidade) {
-        msg.push(isLocalidade)
-    }
-    const isIdade = validaIdade(idade)
-    if (isIdade) {
-        msg.push(isIdade)
-    }
-    const isUf = validaUf(uf)
-    if (isUf) {
-        msg.push(isUf)
-    }
-    msg.forEach(item => {
-        markup += `${item} <br>`
-    })
 
-    if (msg.length == 0) {
+    const teste = []
+
+    // Validação do email
+    const isEmailValid = validaEmail(email);
+    const isEmailEmpty = isEmpty(email);
+    validaocaoFinal(isEmailEmpty, isEmailValid, campoResultadoEmail, teste)
+
+    // Validação do nome
+    const isNomeValid = validaNome(nome)
+    const isNomeEmpty = isEmpty(nome)
+    validaocaoFinal(isNomeEmpty, isNomeValid, campoResultadoNome, teste)
+
+    // Validação do bairro
+    const isBairroValid = validaNome(bairro)
+    const isBairroEmpty = isEmpty(bairro)
+    validaocaoFinal(isBairroEmpty, isBairroValid, campoResultadoBairro, teste)
+
+    // Validação da localidade
+    const isLocalidadeValid = validaNome(localidade)
+    const isLocalidadeEmpty = isEmpty(localidade)
+    validaocaoFinal(isLocalidadeEmpty, isLocalidadeValid, campoResultadoLocalidade, teste)
+
+    // Validação da idade
+    const isIdadeValid = validaIdade(idade)
+    const isIdadeEmpty = isEmpty(idade)
+    validaocaoFinal(isIdadeEmpty, isIdadeValid, campoResultadoIdade, teste)
+
+    // Validação do UF
+    const isUfValid = validaUf(uf)
+    const isUfEmpty = isEmpty(uf)
+    validaocaoFinal(isUfEmpty, isUfValid, campoResultadoUf, teste)
+
+    // Validação do DDD
+    const isDddValid = validaDDD(ddd)
+    const isDddEmpty = isEmpty(ddd)
+    validaocaoFinal(isDddEmpty, isDddValid, campoResultadoDdd, teste)
+
+    // Validação do Numero
+    const isNumeroValid = validaNumero(num)
+    const isNumeroEmpty = isEmpty(num)
+    validaocaoFinal(isNumeroEmpty, isNumeroValid, campoResultadoNumero, teste)
+
+    // Validacao do cep
+    const isCepEmpty = isEmpty(cepUsuario)
+    const isCepValid = validaCep(cepUsuario)
+    validaocaoFinal(isCepEmpty, isCepValid, campoResultadoCep, teste)
+
+    // Validação do Rua
+    const isRuaValid = validaNome(logradouro)
+    const isRuaEmpty = isEmpty(logradouro)
+    validaocaoFinal(isRuaEmpty, isRuaValid, campoResultadoRua, teste)
+
+    if (campoResultadoNome.innerHTML && campoResultadoEmail.innerHTML && campoResultadoIdade.innerHTML && campoResultadoNumero.innerHTML && campoResultadoCep.innerHTML && campoResultadoRua.innerHTML && campoResultadoBairro.innerHTML && campoResultadoLocalidade.innerHTML && campoResultadoUf.innerHTML && campoResultadoDdd.innerHTML === '') {
+        console.log('oi')
+    } else {
+        console.log('deu ruim')
+    }
+
+    console.log(teste.length == 10)
+
+    if (teste.length == 10) {
         alert('Enviando formulário. Obrigado!')
         form.submit()
-    } else {
-        campoResultado.innerHTML = markup
     }
 })
 
-/*
-function Enviar() {
-    if (document.getElementById('idNome').value == ('') || document.getElementById('idNome').value == ('')) {
-        alert('Confira se os campos de "Nome" ou "Idade" estão preenchidos')
+const validaocaoFinal = function ValidacaoCampos(validacaoEmBranco, validaocaoCampo, campo, arr) {
+    if (validacaoEmBranco) {
+        campo.innerHTML = validacaoEmBranco
+    } else if (validaocaoCampo) {
+        campo.innerHTML = validaocaoCampo
     } else {
-        alert('Formulário enviado com sucesso')
-        document.getElementById('idNome').value = ('')
-        document.getElementById('idIdade').value = ('')
-        document.getElementById('cepUsuario').value = ('')
-        document.getElementById('idBairro').value = ('');
-        document.getElementById('idLocalidade').value = ('');
-        document.getElementById('idLogradouro').value = ('');
-        document.getElementById('idDDD').value = ('');
-        document.getElementById('idUF').value = ('')
-        button.disabled = true
+        arr.push('validado')
     }
 }
-*/
