@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+body .container header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 22px 24px;
+}
+body .container header .menu {
+  align-self: flex-end;
+  font-size: 16px;
+  font-weight: 600;
+}
+body .container header .menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+body .container header .menu ul .active a {
+  color: #696969;
+  border-bottom: 3px solid #696969;
+}
+body .container header .menu ul .active a:hover {
+  background-color: #FFF;
+  color: #696969;
+}
+body .container header .menu ul li {
+  padding-left: 25px;
+  text-align: center;
+}
+body .container header .menu ul li a {
+  text-decoration: none;
+  color: #C9022B;
+  padding: 5px;
+}
+body .container header .menu ul li a:hover {
+  background-color: #C9022B;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=style.css.map */
