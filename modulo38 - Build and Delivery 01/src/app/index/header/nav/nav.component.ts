@@ -7,9 +7,7 @@ import {NavIndex} from './index'
 })
 
 export class NavComponent implements OnInit{
-    navMenu: NavIndex[] = []
-    ngOnInit(): void {
-        this.navMenu = [
+    navMenu: NavIndex[] = [
             {
                 itemHome: 'Dados',
                 gancho: '#dados'
@@ -34,6 +32,7 @@ export class NavComponent implements OnInit{
                 itemHome: 'Contatos',
                 gancho: '#contatos'
             }
-        ]
+    ]
+    ngOnInit(): void {
     }
 }
