@@ -1,0 +1,19 @@
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    h1 {
+        margin-left: 206px;
+        font-size: 31px;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            margin-right: 151px;
+            font-size: 14px;
+        }
+    }
+}
