@@ -1,0 +1,14 @@
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    h1 {
+        margin-left: 206px;
+        font-size: 31px;
+    }
+    p {
+        margin-right: 162px;
+    }
+}
