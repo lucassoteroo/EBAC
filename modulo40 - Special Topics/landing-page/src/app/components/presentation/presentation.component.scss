@@ -1,0 +1,29 @@
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 163px;
+    img {
+        width: 800px;
+        margin-left: 220px;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        h3 {
+            font-size: 64px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 36px;
+            font-weight: 400;
+        }
+        button {
+            border: 1px solid #000;
+            font-size: 24px;
+            font-weight: 600px;
+            color: #0074FF;
+            padding: 21px 36px;
+        }
+    }
+}
