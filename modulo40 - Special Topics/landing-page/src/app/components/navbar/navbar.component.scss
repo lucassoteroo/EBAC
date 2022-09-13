@@ -14,6 +14,9 @@ div {
         li {
             margin-right: 151px;
             font-size: 14px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }

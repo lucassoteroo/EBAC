@@ -7,6 +7,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
+import { GeolocationComponent } from './components/geolocation/geolocation.component';
+import { ServicosComponent } from './components/servicos/servicos.component';
+import { SegmentsComponent } from './components/segments/segments.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { PresentationComponent } from './components/presentation/presentation.co
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    PresentationComponent
+    PresentationComponent,
+    GeolocationComponent,
+    ServicosComponent,
+    SegmentsComponent
   ],
   imports: [
     BrowserModule,

@@ -24,6 +24,12 @@ div {
             font-weight: 600px;
             color: #0074FF;
             padding: 21px 36px;
+            &:hover {
+                background-color: #0074FF;
+                border: 1px solid #0074FF;
+                color: #000;
+                cursor: pointer;
+            }
         }
     }
 }

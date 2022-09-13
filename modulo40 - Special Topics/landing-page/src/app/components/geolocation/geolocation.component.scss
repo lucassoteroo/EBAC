@@ -1,0 +1,23 @@
+div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 111px;
+    h3 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 42px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 36px;
+        width: 60%;
+        margin: 0 auto;
+    }
+    div {
+        border-bottom: 3px solid #000;
+        width: 317px;
+        margin: 0 auto;
+        margin-top: 87px;
+    }
+}
