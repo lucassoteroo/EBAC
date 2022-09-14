@@ -57,3 +57,21 @@ div {
         }
     }
 }
+
+@media screen and (max-width: 410px) {
+    div {
+        div {
+            padding: 0px 10px;
+            h3 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 18px;
+                text-align: center;
+            }
+            button {
+                font-size: 18px;
+            }
+        }
+    }
+}
