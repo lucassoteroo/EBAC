@@ -21,8 +21,6 @@ div {
         margin-top: 77px;
         margin: 77px 322px 0 309px;
         ul {
-            // display: flex;
-            // flex-direction: row;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             li {
@@ -44,6 +42,29 @@ div {
                     width: 80%;
                     font-size: 18px;
                     margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div {
+        padding: 0px 30px;
+        margin-top: 115px;
+        h3 {
+            font-size: 36px;
+        }
+        p {
+            width: 100%;
+            font-size: 24px;
+        }
+        div {
+            margin: 77px 30px 0 30px;
+            ul {
+                grid-template-columns: repeat(2, 2fr);
+                li {
+                    margin-bottom: 15px;
                 }
             }
         }
