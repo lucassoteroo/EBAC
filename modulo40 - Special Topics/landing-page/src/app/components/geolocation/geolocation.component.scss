@@ -2,7 +2,8 @@ div {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 111px;
+    margin: 111px 0px 111px 0px;
+    align-items: center;
     h3 {
         font-size: 48px;
         font-weight: 700;
@@ -19,5 +20,11 @@ div {
         width: 317px;
         margin: 0 auto;
         margin-top: 87px;
+        section {
+            iframe {
+                width: 975px;
+                margin-bottom: 87px;
+            }
+        }
     }
 }
