@@ -13,12 +13,12 @@ const reload = browserSync.reload
 function tarefasCSS(cb) {
 
     gulp.src([
-            './node_modules/bootstrap/dist/css/bootstrap.css',
-            './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
-            './vendor/owl/css/owl.css',
-            './vendor/jquery-ui/jquery-ui.css',
-            './src/css/style.css'
-        ])
+        './node_modules/bootstrap/dist/css/bootstrap.css',
+        './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
+        './vendor/owl/css/owl.css',
+        './vendor/jquery-ui/jquery-ui.css',
+        './src/css/style.css'
+    ])
         .pipe(concat('styles.css'))
         .pipe(cssmin())
         .pipe(rename({ suffix: '.min' }))
@@ -30,12 +30,12 @@ function tarefasCSS(cb) {
 function tarefasJS(callback) {
 
     gulp.src([
-            './node_modules/jquery/dist/jquery.js',
-            './node_modules/bootstrap/dist/js/bootstrap.js',
-            './vendor/owl/js/owl.js',
-            './vendor/jquery-mask/jquery.mask.js',
-            './src/js/custom.js'
-        ])
+        './node_modules/jquery/dist/jquery.js',
+        './node_modules/bootstrap/dist/js/bootstrap.js',
+        './vendor/owl/js/owl.js',
+        './vendor/jquery-mask/jquery.mask.js',
+        './src/js/custom.js'
+    ])
         .pipe(babel({
             comments: false,
             presets: ['@babel/env']
@@ -75,7 +75,7 @@ function tarefasHTML(callback) {
 
 }
 
-gulp.task("serve", function() {
+gulp.task("serve", function () {
 
     browserSync.init({
         server: {
@@ -88,7 +88,7 @@ gulp.task("serve", function() {
 
 })
 
-const process = series(tarefasHTML, tarefasJS, tarefasCSS)
+const process = series(tarefasHTML, tarefasJS, tarefasCSS, tarefasImagem)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
